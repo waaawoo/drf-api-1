@@ -46,3 +46,32 @@ INSTALLED＿APPSへ必要パッケージを記載
 'api.apps.ApiConfig',       自作API<br>
 .で繋いでパスを指定している
 api/apps/ApiConfigを指定している
+
+### タイムゾーンの変更
+settings.pyのTimeZoneをAsia/Tokyo
+へ変更
+
+### モデルの作成
+api/modelsへ記載
+モデルを作成したらadmin.pyへモデルをインポートする
+
+### DB作成
+ターミナルで以下を実行し、マイグレーションファイルを作成する<br>
+python manage.py makemigrations <br>
+マイグレーション実行「python manage.py migrate」
+
+### superユーザーの作成
+python manage.py createsuperuser
+user名を決める
+Emailはblankでも問題ない
+パスワードを設定する（簡単なものだと警告がでる、ローカルの場合それでも問題なし）
+今回はadminuser
+
+### admin画面へアクセス
+djangoのローカル環境のURLに/adminでアクセスすると
+ログイン画面へアクセスできる
+そこで設定したsuperユーザーでアクセスすると作成したDBが確認できる
+
+## シリアライザー
+パスワードをハッシュ化したり
+データ値を適正なものへ変換したりするもの
