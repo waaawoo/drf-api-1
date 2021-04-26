@@ -83,3 +83,6 @@ auth 登録情報をPOSTするとトークンが返ってくる <br>
 api/tasks ログインユーザーのみTaskの操作が可能CRUD<br>
 users ログインしていないユーザーがTaskの操作可能CR<br>
 myself ログインユーザー自身の情報を変更できる<br>
+
+## 表示の作成
+views.pyを編集していく
