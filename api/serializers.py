@@ -16,7 +16,7 @@ class UserSerializer(serializers.ModelSerializer):
         # Usermodelを割り当てる
         model = User
         # レスポンスで表示する値を記載
-        fields = ("id", "username", "passwors")
+        fields = ("id", "username", "password")
         # requiredは必須判定
         # write_onlyはSerializerから値を入れるが、読み出しはしたくない場合の値に設定する（個人情報関連データ）
         # ※入力専用のフィールドかをBooleanで判定
