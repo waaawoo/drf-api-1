@@ -77,3 +77,9 @@ djangoのローカル環境のURLに/adminでアクセスすると
 パスワードをハッシュ化したり  
 DBのモデル値を適正な物で返すことができる
 
+## Django Rest  Framework API Endpointについて
+admin DjangoのAdmin Dash Board <br>
+auth 登録情報をPOSTするとトークンが返ってくる <br>
+api/tasks ログインユーザーのみTaskの操作が可能CRUD<br>
+users ログインしていないユーザーがTaskの操作可能CR<br>
+myself ログインユーザー自身の情報を変更できる<br>
