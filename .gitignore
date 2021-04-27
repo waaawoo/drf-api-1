@@ -5,5 +5,4 @@ drfapi/asgi.py
 drfapi/__init__.py
 api/__pycache__
 api/migrations
-
-
+db.sqlite3
