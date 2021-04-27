@@ -36,10 +36,10 @@ class TaskSerializer(serializers.HyperlinkedModelSerializer):
 
     # Djangoのデータタイムをシンプルに表示するためのフォーマット
     created_at = serializers.DateTimeField(format="%Y-%m-%d %h:%M", read_only=True)
-    update_at = serializers.DateTimeField(format="%Y-%m-%d %h:%M", read_only=True)
+    updated_at = serializers.DateTimeField(format="%Y-%m-%d %h:%M", read_only=True)
 
     class Meta:
         # モデルの割り当て
         model = Task
         # 入力する値を指定
-        fields = ["id", "title", "created_At", "updated_at"]
+        fields = ["id", "title", "created_at", "updated_at"]
