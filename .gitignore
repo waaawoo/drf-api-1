@@ -1,1 +1,7 @@
-drfapi
+drfapi/settings.py
+drfapi/wsgi.py
+drfapi/asgi.py
+drfapi/__init__.py
+/api/__pycache__
+/api/migrations
+*.pyc
