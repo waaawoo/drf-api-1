@@ -86,3 +86,19 @@ myself ログインユーザー自身の情報を変更できる<br>
 
 ## 表示の作成
 views.pyを編集していく
+
+## 動作確認
+#### 必要ツール
+POSTMAN <br>
+ModHeader<br>
+
+POSTMANでトークンを作成する  
+POST送信で　ローカルURL/auth/  
+KEY VALUEを設定する  
+username 設定値  
+password 設定値  
+Sendボタンを押すとトークンが発行される
+
+ModHeaderでトークンを利用する  
+name: Authorization  
+value: Token 作成したトークンを記載
