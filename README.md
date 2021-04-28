@@ -102,3 +102,15 @@ Sendボタンを押すとトークンが発行される
 ModHeaderでトークンを利用する  
 name: Authorization  
 value: Token 作成したトークンを記載
+
+## 作成したAPIをフロント側で使用できるよう設定
+ターミナルにて以下を実行  
+pip install django-cors-headers
+
+#### settings.pyを編集
+INSTALLED_APPSへ「corsheaders」を追加  
+MIDDLEWAREへ「corsheaders.middleware.CorsMiddleware」を追加  
+新規で以下を作成する  
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+]
